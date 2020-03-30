@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+// import axios from 'axios';
 
 import Navigation from '../Navigation';
 import HomePage from '../Home';

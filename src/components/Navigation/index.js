@@ -9,9 +9,9 @@ const Navigation = () => (
       <li>
         <Link to={ROUTES.HOME}>Home</Link>
       </li>
-      <li>
+      {/* <li>
         <Link to={ROUTES.ADMIN}>Admin</Link>
-      </li>
+      </li> */}
     </ul>
   </div>
 );
