@@ -1,6 +1,6 @@
-export const HOME = '/';
+export const HOME = '/home';
 export const ABOUT = '/about';
-export const ART = '/art';
+export const ART = '/artgallery';
 export const BLOG = '/blog';
 export const CONTACT = '/contact';
 export const ADMIN = '/admin';

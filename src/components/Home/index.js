@@ -1,28 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class Home extends Component {
-  constructor(props) {
-    super(props);
+const Home = () => (
+  <div>
+    <h1>Home</h1>
+  </div>
+);
 
-}
-render() {
-  return (
-    <div className="homepage-wrapper">
-      <div className="filter-links">
-      </div>
-    </div>
-    ); 
-  }
-}
-
-
-
-
-
-// const Home = () => (
-//   <div>
-//     <h1>Home</h1>
-//   </div>
-// );
-
-// export default Home;
+export default Home;

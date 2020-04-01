@@ -1,4 +1,38 @@
 .nav-wrapper {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 8px;
+  padding: 24px;
+
+  .right-side {
+    display: flex;
+    margin-left: 150px;
+  }
+
+    .left-side {
+      display: flex;
+      flex-direction: column;
+      margin-right: 150px;
+    }
+
+    .nav-link-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 22px;
+      border-bottom: 1px solid transparent;
+      margin-left: 20px;
+      font-size: 1.5rem;
+      
+      &:hover {
+        border-top: 3px solid red;
+      }
+
+      // always showing on the homepage
+      .nav-link-active {
+        border-top: 3px solid red;
+      }
+  }
 }
+

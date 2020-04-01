@@ -15,8 +15,6 @@ const App = () => (
   <Router>
     <div>
       <Navigation />
-      
-      <hr />
       <Route path={ROUTES.HOME} component={HomePage} />
       <Route path={ROUTES.ABOUT} component={AboutPage} />
       <Route path={ROUTES.ART} component={ArtPage} />
