@@ -1,6 +1,9 @@
+export const SIGN_IN = '/signin';
 export const HOME = '/home';
+export const ACCOUNT = '/account';
 export const ABOUT = '/about';
 export const ART = '/artgallery';
 export const BLOG = '/blog';
 export const CONTACT = '/contact';
 export const AUTH = '/auth';
+export const PASSWORD_FORGET = '/pw-forget';
