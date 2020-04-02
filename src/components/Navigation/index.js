@@ -2,6 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router';
 import { NavLink } from 'react-router-dom';
 
+// import SignOutButton from '../Auth';
 import * as ROUTES from '../../constants/routes';
 
 const Navigation = () => {

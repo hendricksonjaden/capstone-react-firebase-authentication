@@ -10,6 +10,7 @@ import ContactPage from '../Contact';
 import AuthPage from '../Auth';
 
 import * as ROUTES from '../../constants/routes';
+import { withFirebase } from '../Firebase';
 
 class App extends Component {
   constructor(props) {
@@ -19,12 +20,21 @@ class App extends Component {
       authUser: null,
     };
   }
+
+  componenetDidMount() {
+    this.props.firebase.auth.onAuthStateChanged(authUser => {
+      authUser
+        ? this.setState({ authUser })
+        : this.setState({ authUser: null });
+    });
+  }
+
   render() {
   return (
     <div className="container">
       <Router>
         <div>
-          <Navigation />
+          <Navigation authUser={this.state.authUser} />
           <Route path={ROUTES.HOME} component={HomePage} />
           <Route path={ROUTES.ABOUT} component={AboutPage} />
           <Route path={ROUTES.ART} component={ArtPage} />
@@ -39,4 +49,4 @@ class App extends Component {
 }
 
 
-export default App;
+export default withFirebase(App);
