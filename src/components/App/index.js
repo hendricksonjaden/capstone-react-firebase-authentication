@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Navigation from '../Navigation';
@@ -7,22 +7,36 @@ import AboutPage from '../About';
 import ArtPage from '../Art';
 import BlogPage from '../Blog';
 import ContactPage from '../Contact';
-import AdminPage from '../Admin';
+import AuthPage from '../Auth';
 
 import * as ROUTES from '../../constants/routes';
 
-const App = () => (
-  <Router>
-    <div>
-      <Navigation />
-      <Route path={ROUTES.HOME} component={HomePage} />
-      <Route path={ROUTES.ABOUT} component={AboutPage} />
-      <Route path={ROUTES.ART} component={ArtPage} />
-      <Route path={ROUTES.BLOG} component={BlogPage} />
-      <Route path={ROUTES.CONTACT} component={ContactPage} />
-      <Route path={ROUTES.ADMIN} component={AdminPage} />
+class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      authUser: null,
+    };
+  }
+  render() {
+  return (
+    <div className="container">
+      <Router>
+        <div>
+          <Navigation />
+          <Route path={ROUTES.HOME} component={HomePage} />
+          <Route path={ROUTES.ABOUT} component={AboutPage} />
+          <Route path={ROUTES.ART} component={ArtPage} />
+          <Route path={ROUTES.BLOG} component={BlogPage} />
+          <Route path={ROUTES.CONTACT} component={ContactPage} />
+          <Route path={ROUTES.AUTH} component={AuthPage} />
+        </div>
+      </Router>
     </div>
-  </Router>
-);
+    )
+  }
+}
+
 
 export default App;

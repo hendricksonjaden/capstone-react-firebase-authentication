@@ -5,7 +5,7 @@ import { compose } from 'recompose';
 import { withFirebase } from '../Firebase';
 import * as ROUTES from '../../constants/routes';
 
-const Admin = () => (
+const Auth = () => (
   <div>
     <h1>SignIn</h1>
     <SignInForm />
@@ -68,5 +68,5 @@ const SignInForm = compose(
   withRouter,
   withFirebase,
 )(SignInFormBase);
-export default Admin;
+export default Auth;
 export { SignInForm };

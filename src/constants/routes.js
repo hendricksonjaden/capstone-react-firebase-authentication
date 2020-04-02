@@ -3,4 +3,4 @@ export const ABOUT = '/about';
 export const ART = '/artgallery';
 export const BLOG = '/blog';
 export const CONTACT = '/contact';
-export const ADMIN = '/admin';
+export const AUTH = '/auth';

@@ -7,10 +7,7 @@ import * as ROUTES from '../../constants/routes';
 const Navigation = () => {
   return (
     <div className="nav-wrapper">
-    <div className="left-side">
-      Mallory 
-      Hendrickson
-    </div>
+    <div className="left-side">Mallory Hendrickson</div>
       <div className="right-side">
         <div className="nav-link-wrapper">
           <NavLink to={ROUTES.HOME} activeClassName="nav-link-active">
@@ -38,7 +35,8 @@ const Navigation = () => {
           </NavLink>
         </div>
         {/* <div>
-          <NavLink to={ROUTES.ADMIN}>Admin</NavLink>
+          <NavLink to={ROUTES.AUTH}>Auth</NavLink>
+          <li>SignOutButton</li>
         </div> */}
       </div>
     </div>
