@@ -36,10 +36,10 @@ const Navigation = () => {
             Contact
           </NavLink>
         </div>
-        <div>
-          {/* <NavLink to={ROUTES.AUTH}>Auth</NavLink> */}
+        {/* <div>
+          <NavLink to={ROUTES.AUTH}>Auth</NavLink>
           <li>Sign Out</li>
-        </div>
+        </div> */}
       </div>
     </div>
   );  
