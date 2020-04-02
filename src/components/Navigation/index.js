@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router';
 import { NavLink } from 'react-router-dom';
 
-// import SignOutButton from '../Auth';
+import SignOutButton from '../Auth';
 import * as ROUTES from '../../constants/routes';
 
 const Navigation = () => {
@@ -36,10 +36,10 @@ const Navigation = () => {
             Contact
           </NavLink>
         </div>
-        {/* <div>
-          <NavLink to={ROUTES.AUTH}>Auth</NavLink>
-          <li>SignOutButton</li>
-        </div> */}
+        <div>
+          {/* <NavLink to={ROUTES.AUTH}>Auth</NavLink> */}
+          <li>Sign Out</li>
+        </div>
       </div>
     </div>
   );  
