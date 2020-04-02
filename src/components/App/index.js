@@ -22,11 +22,17 @@ class App extends Component {
   }
 
   componenetDidMount() {
-    this.props.firebase.auth.onAuthStateChanged(authUser => {
-      authUser
+    this.listener = this.props.firebase.auth.onAuthStateChanged(
+      authUser => {
+        authUser
         ? this.setState({ authUser })
         : this.setState({ authUser: null });
-    });
+      },
+    );
+  }
+
+  componenetWillUnmount() {
+    this.listener();
   }
 
   render() {

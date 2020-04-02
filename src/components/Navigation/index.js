@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 import * as ROUTES from '../../constants/routes';
 
 const Navigation = () => {
+  console.log(process.env.REACT_APP_API_KEY)
   return (
     <div className="nav-wrapper">
     <div className="left-side">Mallory Hendrickson</div>
